@@ -1,6 +1,5 @@
 import cv2
-import time
-import handtrackingmodule as htm
+import hand_tracking_module as htm
 import numpy as np
 import os
 
@@ -107,4 +106,5 @@ while True:
     cv2.imshow("Image", img)
     #cv2.imshow("Canvas", imgCanvas)
     #cv2.imshow("Inv", imgInv)
-    cv2.waitKey(1)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
