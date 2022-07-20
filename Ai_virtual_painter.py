@@ -106,5 +106,7 @@ while True:
     cv2.imshow("Image", img)
     #cv2.imshow("Canvas", imgCanvas)
     #cv2.imshow("Inv", imgInv)
+
+    #press q to quit from the program
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
