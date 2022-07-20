@@ -96,7 +96,7 @@ while True:
 
     # 2 converting into binary image and thn inverting
     # on canvas all the region in which we drew is black and where it is black it is cosidered as white,it will create a mask
-    _, imgInv = cv2.threshold(imgGray, 50, 255, cv2.THRESH_BINARY_INV)
+    _, imgInv = cv2.threshold(imgGray, 20, 255, cv2.THRESH_BINARY_INV)
 
     # converting again to gray bcoz we have to add in a RGB image i.e img
     imgInv = cv2.cvtColor(imgInv, cv2.COLOR_GRAY2BGR)
