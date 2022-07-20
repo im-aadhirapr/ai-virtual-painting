@@ -13,7 +13,7 @@ xp, yp = 0, 0
 imgCanvas = np.zeros((720, 1280, 3), np.uint8)# defining canvas
 
 #images in header folder
-folderPath="Header"
+folderPath="header"
 myList=os.listdir(folderPath)#getting all the images used in code
 #print(myList)
 for imPath in myList:#reading all the images from the folder
