@@ -112,8 +112,8 @@ while True:
     img[0:125, 0:1280] = header
 
     cv2.imshow("Image", img)
-    #cv2.imshow("Canvas", imgCanvas)
-    #cv2.imshow("Inv", imgInv)
+    cv2.imshow("Canvas", imgCanvas)
+    cv2.imshow("Inv", imgInv)
 
     # press q to quit from the program
     if cv2.waitKey(1) & 0xFF == ord('q'):
